@@ -1,17 +1,65 @@
-<style></style>
-header 
-  background-color: #183C63;
-}
-header {
-background-color: #c22222;
-color: #FFFFFF;
-}
-main {
-background-color: #FFFFFF;
-color: #0c6ae6;
-}
-  background-color: #FFFFFF;
-color: #183C63;
-text-align: center;
-max-width: 800px;
-margin: 0 auto;
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Blog Tech</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Meu Blog Tech</h1>
+        <p>Vou falar sobre o time de futebol do Flamengo.</p>
+    </header>
+
+    <main>
+        <h2>Meu primeiro post</h2>
+
+        <p>Por: Kelly de Oliveira</p>
+
+        <img src="flamengo.jpg" alt="Imagem do Flamengo">
+
+        <p>
+            Boas-vindas ao meu novo blog! Aqui vou compartilhar
+            sobre o Clube de Regatas do Flamengo.
+        </p>
+
+        <p>
+            O Flamengo não nasceu como um time de futebol,
+            mas sim como um clube de remo.
+        </p>
+
+        <p>
+            Foi fundado em 17 de novembro de 1895 por um grupo
+            de jovens no bairro do Flamengo, no Rio de Janeiro.
+        </p>
+
+        <p>
+            Curiosidade: as cores originais eram azul e ouro,
+            mas em 1896 mudaram para o vermelho e preto,
+            o famoso rubro-negro.
+        </p>
+
+        <p>
+            Entre o fim dos anos 70 e o início dos anos 80,
+            o Flamengo viveu a fase mais gloriosa da sua história,
+            tendo como maior ídolo Zico, o "Galinho de Quintino".
+        </p>
+
+        <p>
+            Em 1981, o time comandado por Zico, Adílio, Andrade
+            e companhia conquistou a Copa Libertadores e o
+            Mundial Interclubes.
+        </p>
+
+        <p>
+            O Flamengo se consolidou como uma das maiores torcidas
+            do Brasil, a chamada Nação Rubro-Negra.
+        </p>
+    </main>
+
+</body>
+</html>
