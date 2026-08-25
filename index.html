@@ -100,24 +100,19 @@
         <p>&copy; 2026 - Página dedicada à história do Clube de Regatas do Flamengo. "Isso aqui é Flamengo!"</p>
     </footer>
 
-    <!-- Script para fazer o botão funcionar -->
+    <!-- Script atualizado para ir apenas somando as curtidas -->
     <script>
-        let curtido = false;
         function darLike() {
             const btn = document.getElementById('likeBtn');
             const count = document.getElementById('likeCount');
             let total = parseInt(count.innerText);
 
-            if (!curtido) {
-                total += 1;
-                btn.classList.add('liked');
-                curtido = true;
-            } else {
-                total -= 1;
-                btn.classList.remove('liked');
-                curtido = false;
-            }
+            // Sempre soma mais um a cada clique
+            total += 1;
             count.innerText = total;
+
+            // Adiciona a classe visual de curtido se ainda não tiver
+            btn.classList.add('liked');
         }
     </script>
 </body>
