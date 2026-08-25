@@ -90,7 +90,148 @@
             <ul class="destaques-list">
                 <li><strong>Mundial Interclubes:</strong> 1 título (1981)</li>
                 <li><strong>Copa Libertadores da América:</strong> 3 títulos (1981, 2019 e 2022)</li>
+                <li><strong>Cam<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>História do flamengo </title>
+    <style>
+        /* Configuração do Plano de Fundo com a Bandeira */
+        body {
+            background-image: url('bandeira-flamengo.jpg'); /* Substitua pelo nome do arquivo da bandeira */
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-attachment: fixed;
+            margin: 0;
+            padding: 20px 0;
+        }
+
+        header{
+            background-color: #183c63;
+            color:#FFFFFF;
+            text-align: center;
+            max-width:800px ;
+            margin: 0 auto;
+            padding: 16px;
+            border: 5px solid #c72626;
+        } 
+        main {
+            /* Fundo branco com um leve toque de transparência (95%) para destacar o texto */
+            background-color: rgba(255, 255, 255, 0.95);
+            color:#183c63;
+            max-width: 800px;
+            margin:0 auto;
+            padding: 16px;
+        }
+        
+        /* Estilização da seção de Like */
+        .like-container {
+            margin-top: 15px;
+            margin-bottom: 25px;
+        }
+        .btn-like {
+            background-color: #f0f2f5;
+            color: #333;
+            border: 2px solid #c72626;
+            padding: 8px 16px;
+            border-radius: 20px;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: bold;
+            transition: 0.3s;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .btn-like:hover {
+            background-color: #ffe6e6;
+        }
+        .btn-like.liked {
+            background-color: #c72626;
+            color: #FFFFFF;
+        }
+
+        footer {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+            color: #FFFFFF;
+            background-color: rgba(0, 0, 0, 0.6);
+            padding: 10px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu primeiro blog </h1>
+        <p>kelly de oliveira</p>
+        <p>Vou falar sobre o time de futebol do flamengo</p>
+    </header>
+    <main>
+        <header>
+            <h1>Clube de Regatas do Flamengo</h1>
+            <p>Uma Nação de Paixão, Glórias e Tradição</p>
+        </header>
+
+        <img src="imagem.img.jpg" alt="Foto de jogadores e comissão técnica do Flamengo comemorando o título da Copa Libertadores, com o troféu levantado no centro." style="max-width: 100%; height: auto;">
+        
+        <!-- Botão de Like inserido abaixo da imagem -->
+        <div class="like-container">
+            <button class="btn-like" id="likeBtn" onclick="darLike()">
+                ❤️ Curtir (<span id="likeCount">0</span>)
+            </button>
+        </div>
+
+        <section>
+            <h2>A Fundação (1895)</h2>
+            <p>O <strong>Clube de Regatas do Flamengo</strong> foi fundado em <strong>17 de novembro de 1895</strong>, na praia do Flamengo, na cidade do Rio de Janeiro. Originalmente, o clube nasceu com o objetivo de se dedicar à prática do remo, esporte muito popular na época. Seus fundadores foram jovens remadores insatisfeitos com a gestão de outro clube da cidade.</p>
+        </section>
+
+        <section>
+            <h2>A Chegada do Futebol</h2>
+            <p>Embora tenha começado nas águas, o futebol entrou para a história do clube em <strong>1911</strong>, após uma cisão no Fluminense Football Club que levou vários jogadores a se transferirem para o Flamengo. A estreia oficial da equipe de futebol aconteceu em 3 de maio de 1912, com uma vitória marcante de 16 a 0 sobre o Mangueira.</p>
+        </section>
+
+        <section>
+            <h2>A Era de Ouro e o Mundo (1981)</h2>
+            <p>A década de 1980 marcou o período mais glorioso da história rubro-negra. Liderados em campo pelo ícone <strong>Zico</strong>, o Flamengo conquistou sua primeira Copa Libertadores da América e o título do <strong>Mundial Interclubes em 1981</strong>, vencendo o poderoso Liverpool (Inglaterra) por 3 a 0 no Japão, além de múltiplos Campeonatos Brasileiros.</p>
+        </section>
+
+        <section>
+            <h2>Principais Conquistas</h2>
+            <ul class="destaques-list">
+                <li><strong>Mundial Interclubes:</strong> 1 título (1981)</li>
+                <li><strong>Copa Libertadores da América:</strong> 3 títulos (1981, 2019 e 2022)</li>
                 <li><strong>Campeonato Brasileiro:</strong> Múltiplas conquistas nacionais oficializadas pela CBF</li>
+                <li><strong>Campeonato Carioca:</strong> Maior vencedor da história do torneio estadual</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 - Página dedicada à história do Clube de Regatas do Flamengo. "Isso aqui é Flamengo!"</p>
+    </footer>
+
+    <!-- Script para ir somando as curtidas -->
+    <script>
+        function darLike() {
+            const btn = document.getElementById('likeBtn');
+            const count = document.getElementById('likeCount');
+            let total = parseInt(count.innerText);
+
+            // Sempre soma mais um a cada clique
+            total += 1;
+            count.innerText = total;
+
+            // Adiciona a classe visual de curtido
+            btn.classList.add('liked');
+        }
+    </script>
+</body>
+</html>peonato Brasileiro:</strong> Múltiplas conquistas nacionais oficializadas pela CBF</li>
                 <li><strong>Campeonato Carioca:</strong> Maior vencedor da história do torneio estadual</li>
             </ul>
         </section>
