@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pr-br">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,32 +13,63 @@
             margin: 0 auto;
             padding: 16px;
             border: 5px solid #c72626;
-        } main {
+        } 
+        main {
             background-color:#FFFFFF;
             color:#183c63;
             max-width: 800px;
             margin:0 auto;
             padding: 16px;
         }
+        /* Estilização da seção de Like */
+        .like-container {
+            margin-top: 15px;
+            margin-bottom: 25px;
+        }
+        .btn-like {
+            background-color: #f0f2f5;
+            color: #333;
+            border: 2px solid #c72626;
+            padding: 8px 16px;
+            border-radius: 20px;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: bold;
+            transition: 0.3s;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .btn-like:hover {
+            background-color: #ffe6e6;
+        }
+        .btn-like.liked {
+            background-color: #c72626;
+            color: #FFFFFF;
+        }
     </style>
 </head>
 <body>
     <header>
-    <h1>Meu primeiro blog </h1>
-    <p>kelly de oliveira</p>
-     <p>  Vou falar sobre o time de futebol do flamengo</p>
+        <h1>Meu primeiro blog </h1>
+        <p>kelly de oliveira</p>
+        <p>Vou falar sobre o time de futebol do flamengo</p>
     </header>
     <main>
         <header>
-        <h1>Clube de Regatas do Flamengo</h1>
-        <p>Uma Nação de Paixão, Glórias e Tradição</p>
-    </header>
-<img src="imagem.img.jpg" alt="imagem.img.jpg
-O ChatGPT disse:
+            <h1>Clube de Regatas do Flamengo</h1>
+            <p>Uma Nação de Paixão, Glórias e Tradição</p>
+        </header>
 
-Foto de jogadores e comissão técnica do Flamengo comemorando o título da Copa Libertadores 2025, com o troféu levantado no centro, confetes no ar e torcedores ao fundo.
-">
-    <main>
+        <img src="imagem.img.jpg" alt="Foto de jogadores e comissão técnica do Flamengo comemorando o título da Copa Libertadores, com o troféu levantado no centro.">
+        
+        <!-- Botão de Like inserido abaixo da imagem -->
+        <div class="like-container">
+            <button class="btn-like" id="likeBtn" onclick="darLike()">
+                ❤️ Curtir (<span id="likeCount">0</span>)
+            </button>
+        </div>
+
         <section>
             <h2>A Fundação (1895)</h2>
             <p>O <strong>Clube de Regatas do Flamengo</strong> foi fundado em <strong>17 de novembro de 1895</strong>, na praia do Flamengo, na cidade do Rio de Janeiro. Originalmente, o clube nasceu com o objetivo de se dedicar à prática do remo, esporte muito popular na época. Seus fundadores foram jovens remadores insatisfeitos com a gestão de outro clube da cidade.</p>
@@ -69,5 +100,25 @@ Foto de jogadores e comissão técnica do Flamengo comemorando o título da Copa
         <p>&copy; 2026 - Página dedicada à história do Clube de Regatas do Flamengo. "Isso aqui é Flamengo!"</p>
     </footer>
 
+    <!-- Script para fazer o botão funcionar -->
+    <script>
+        let curtido = false;
+        function darLike() {
+            const btn = document.getElementById('likeBtn');
+            const count = document.getElementById('likeCount');
+            let total = parseInt(count.innerText);
+
+            if (!curtido) {
+                total += 1;
+                btn.classList.add('liked');
+                curtido = true;
+            } else {
+                total -= 1;
+                btn.classList.remove('liked');
+                curtido = false;
+            }
+            count.innerText = total;
+        }
+    </script>
 </body>
 </html>
